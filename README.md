@@ -1,5 +1,5 @@
 # instagram_clone
-instagram clone build with ionic 2 framework v0.7
+instagram clone Mobile Applicion, build with ionic 2 framework v0.7
 
 
 To Start The Development :
