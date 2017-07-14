@@ -1,0 +1,31 @@
+.comments {
+  position: relative;
+}
+
+.profile-img {
+  border-radius: 50%;
+  max-width: 30px;
+  display: inline;
+
+}
+
+.comment-time{
+  font-size: 12px;
+  font-weight: 400;
+  color: #C7C7C9;
+  position: absolute;
+  bottom: 50%;
+  left: 80%;
+}
+.comment{
+  font-size: 12px;
+  font-weight: 200;
+  color: #383838;
+
+}
+.name {
+  display: inline;
+  position: absolute;
+  top: -10px;
+  left: 40px;
+}

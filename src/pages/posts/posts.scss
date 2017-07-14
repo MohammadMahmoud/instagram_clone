@@ -1,0 +1,88 @@
+//framework start
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.inline {
+  display: inline;
+  font-family: "lato";
+  font-size: 15px;
+  padding: 0 5px;
+  font-weight: 700;
+}
+
+.more {
+  float: right;
+  background-color: transparent;
+  font-size: 20px;
+}
+.red{
+  color: red;
+}
+.add {
+  background-color: #4183D7;
+  position: fixed;
+  border-radius: 50%;
+  top: 90%;
+  padding: 10px;
+  left: 80%;
+  font-size: 20px;
+  color: #ffffff;
+  z-index: 50;
+}
+.ion-md-create {
+  width: 25px;
+  height: 25px;
+}
+//framework end
+
+//post styling start
+
+.postdetalis {
+
+  font-family: "lato";
+
+  .timeline {
+    position: relative;
+    img {
+      border-radius: 50%;
+      max-width: 30px;
+      display: inline;
+    }
+    .name {
+      position: absolute;
+      top: -15px;
+      left: 45px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .time {
+      position: absolute;
+      top: 6px;
+      left: 45px;
+      font-size: 10px;
+      color: #b4b4b4;
+      font-weight: 300;
+    }
+  }
+  .post {
+    padding: 10px 0;
+    .postimg {
+      margin-left: -15px !important;
+      max-width: 365px !important;
+      -webkit-box-shadow: 10px 10px 92px -15px rgba(184, 184, 184, 1);
+      -moz-box-shadow: 10px 10px 92px -15px rgba(184, 184, 184, 1);
+      box-shadow: 10px 10px 92px -15px rgba(184, 184, 184, 1);
+
+    }
+    .postcaption {
+      font-size: 12px;
+      font-weight: 400;
+      color: #C7C7C9;
+    }
+  }
+}
+
+//post styling end

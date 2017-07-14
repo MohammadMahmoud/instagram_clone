@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Post Detalis</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+        <div class="postdetalis">
+            <div class="timeline">
+                <img src="{{post.ownerImg}}">
+                <h5 class="name">{{post.ownerName}}</h5>
+                <p class="time">{{post.postTime}}</p>
+            </div>
+            <div class="post">
+                <img class="postimg" src="{{post.postImg}}">
+                <p class="postcaption">{{post.postCaption}}</p>
+                <ion-icon [ngClass]="{'red': isRed }" (click)="isRed = !isRed;" name="heart-outline"><p class="inline">
+                    {{post.postLikes}}</p></ion-icon>
+                <ion-icon ios="ios-chatboxes-outline" md="ios-chatboxes-outline"><p class="inline">
+                    {{post.postComments}}</p></ion-icon>
+            </div>
+        </div>
+        <hr>
+        <div class="comments" *ngFor="let comment of comments">
+            <!--//loop of comments-->
+            <img src="{{comment.ownerImg}}" alt="profile" class="profile-img">
+            <h5 class="name">{{comment.ownerName}}</h5>
+            <p class="comment-time">{{comment.commentTime}}</p>
+            <p class="comment">{{comment.comment}}</p>
+            <ion-icon [ngClass]="{'red': isRed }" (click)="isRed = !isRed;" name="heart-outline"><p class="inline">
+                {{comment.likes}}</p></ion-icon>
+            <hr>
+        </div>
+    </div>
+</ion-content>

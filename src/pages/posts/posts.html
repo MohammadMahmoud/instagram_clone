@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Assessment</ion-title>
+        <button ion-button menuToggle style="order: 4;">
+            <ion-icon name="search"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button class="add">
+        <ion-icon name="md-create" (click)="posting()"></ion-icon>
+        <!--//post button-->
+    </button>
+    <div *ngFor="let post of posts">
+        <!--//loop thorugh array of posting-->
+        <div class="postdetalis">
+            <div class="timeline">
+                <img src="{{post.ownerImg}}">
+                <button class="more" (click)="presentActionSheet()"><ion-icon name="more"></ion-icon></button>
+                <!--//action button-->
+                <h5 class="name">{{post.ownerName}}</h5>
+                <p class="time">{{post.postTime}}</p>
+            </div>
+            <div class="post">
+                <img class="postimg" src="{{post.postImg}}"  (click)="postdetalis(post.postID)"><p class="postcaption">{{post.postCaption}}</p>
+                <ion-icon [ngClass]="{'red': isRed }" (click)="like(post.postLikes)" name="heart-outline"><p class="inline">{{post.postLikes}}</p></ion-icon>
+                <ion-icon ios="ios-chatboxes-outline" md="ios-chatboxes-outline"  (click)="postdetalis(post.postID)"><p class="inline">{{post.postComments}}</p></ion-icon>
+            </div>
+        </div>
+        <hr>
+    </div>
+</ion-content>
