@@ -4,14 +4,14 @@ instagram clone build with ionic 2 framework v0.7
 
 To Start The Development :
 
-install ionic frameworks in your pc as global
+<b>install ionic frameworks in your pc as global</b>
 
 1.npm install -g cordova ionic
 
 install the typescript as global 
 
-2.npm install -g typescript
+<b>2.npm install -g typescript</b>
 
-the rest is recommended if you want build your app
+<b>The rest is recommended if you want build your app</b>
 
 install JAVA SDE & Android Studio -> Android App Build
